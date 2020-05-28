@@ -1,0 +1,15 @@
+<div class="header js-header">
+  <div class="header-container">
+    <%= link_to root_path do %>
+      <div>The Creator Plateform</div>
+    <% end %>
+    <div>
+      <%= c 'button', additionnal_classes: 'secondary' do %>
+        <span>Mon Profil</span>
+      <% end %>
+      <%= c "avatar", picture_url: current_influencer.instagram.profile_pict %>
+      <%= link_to "sign off", destroy_influencer_session_path, method: :delete %>
+    </div>
+  </div>
+
+</div>

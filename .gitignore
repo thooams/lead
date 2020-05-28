@@ -1,3 +1,4 @@
+# FOO
 foo/.bundle
 foo/log/*.log
 foo/tmp/**/*
@@ -13,3 +14,20 @@ foo/node_modules
 foo/yarn-error.log
 foo/.byebug_history
 foo/config/master.key
+
+# BOO
+boo/.bundle
+boo/log/*.log
+boo/tmp/**/*
+boo/tmp/*
+boo/!log/.keep
+boo/!tmp/.keep
+boo/*.swp
+boo/.DS_Store
+boo/public/assets
+boo/public/packs
+boo/public/packs-test
+boo/node_modules
+boo/yarn-error.log
+boo/.byebug_history
+boo/config/master.key

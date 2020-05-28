@@ -1,0 +1,15 @@
+<div class="campaign js-campaign">
+  <div class="campaign-banner" style="background-image: url(<%= campaign.banner_picture_url %>)">
+    <%= c 'button' do %>
+      Postuler
+    <% end %>
+  </div>
+  <div class="campaign-footer">
+    <div><%= campaign.hashtag %></div>
+    <div class="campaign-footer-participants">
+      <% Identity.order('RANDOM()').limit(3).each do |identity| %>
+        <%= c 'avatar', picture_url: identity.profile_pict %>
+      <% end %>
+    </div>
+  </div>
+</div>
