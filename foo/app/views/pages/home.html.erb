@@ -1,0 +1,13 @@
+<div class="login_form">
+  <div><h1>FOÔ<span></span></h1></div>
+  <h2>Test brand new products !</h2>
+  <p>Apply for exclusive testing campaigns and get rewarded.</p>
+  <%= link_to omniauth_authorize_path(:consumer, "facebook") do %>
+    <%= c 'button' do %>
+      Connect with facebook
+    <% end %>
+  <% end %>
+
+
+</div>
+<%= image_pack_tag('media/static/sneakers.png') %>

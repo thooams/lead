@@ -1,0 +1,15 @@
+foo/.bundle
+foo/log/*.log
+foo/tmp/**/*
+foo/tmp/*
+foo/!log/.keep
+foo/!tmp/.keep
+foo/*.swp
+foo/.DS_Store
+foo/public/assets
+foo/public/packs
+foo/public/packs-test
+foo/node_modules
+foo/yarn-error.log
+foo/.byebug_history
+foo/config/master.key

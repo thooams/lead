@@ -1,0 +1,18 @@
+@import '../../config/index.scss';
+
+.campaign {
+  margin-bottom: 6rem;
+  &-banner {
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .button {
+      flex: 0 0 20%;
+    }
+  }
+}
