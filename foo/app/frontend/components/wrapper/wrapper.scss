@@ -1,0 +1,12 @@
+@import '../../config/index.scss';
+
+.wrapper {
+  background-color: $backgroundColor;
+  &-container {
+    margin: 0 auto;
+    width: 70%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    padding-top: 3rem;
+  }
+}

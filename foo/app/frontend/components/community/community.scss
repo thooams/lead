@@ -1,0 +1,12 @@
+@import '../../config/index.scss';
+
+.community {
+  margin-top: 8rem;
+  width: 100%;
+  overflow-x: scroll;
+  > div {
+    max-width: 100%;
+    overflow-x: scroll;
+    display: flex;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="bio js-bio">
+  <div class="bio-row">
+    <span><%= user.instagram.number_of_followers %></span>&nbsp;followers
+  </div>
+  <div class="bio-row">
+    <%= link_to user.instagram.link, target: '_blank' do %>
+      <span>Instagram</span>&nbsp;bio
+    <% end %>
+  </div>
+  <div class="bio-row">
+    <span>12</span>&nbsp;participations
+  </div>
+</div>
