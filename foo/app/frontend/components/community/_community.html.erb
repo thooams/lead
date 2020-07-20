@@ -1,8 +1,0 @@
-<div class="community js-community">
-  <h3>From the community<span></span></h3>
-  <div>
-    <% Identity.where(provider: 'instagram').last(7).select{ |identity| identity != current_consumer.instagram }.each do |identity| %>
-      <%= c 'avatar', additionnal_classes: "secondary", picture_url: identity.profile_pict %>
-    <% end %>
-  </div>
-</div>
