@@ -1,0 +1,13 @@
+.pages-home {
+  background-color: $backgroundColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  img {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    height: 10rem;
+  }
+}

@@ -1,0 +1,33 @@
+@import "normalize.css/normalize.css";
+@import "colors.scss";
+@import "fonts.scss";
+
+$screen-xs: 440px;
+$screen-sm: 768px;
+$screen-md: 1200px;
+$screen-lg: 1400px;
+$screen-xl: 1600px;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $baseFont;
+  color: $fontColor;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headerFont;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+

@@ -1,0 +1,15 @@
+@import '../../config/index.scss';
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+  min-width: 4rem;
+  border-radius: 50%;
+  border: 2px solid $brandColor;
+  background-position: center;
+  background-size: contain;
+  margin-right: 2rem;
+}
+.avatar.secondary {
+  border: 2px solid $secondCtaColor;
+}

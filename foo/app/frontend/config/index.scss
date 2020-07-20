@@ -1,0 +1,44 @@
+@import "normalize.css/normalize.css";
+@import "colors.scss";
+@import "fonts.scss";
+
+$screen-xs: 440px;
+$screen-sm: 768px;
+$screen-md: 1200px;
+$screen-lg: 1400px;
+$screen-xl: 1600px;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $fontColor;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $baseFont;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headerFont;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  span {
+    height: 0.5em;
+    background: $brandColor;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0em;
+    z-index: -1;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
