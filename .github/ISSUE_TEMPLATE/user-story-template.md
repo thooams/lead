@@ -1,7 +1,10 @@
 ---
 name: User story
 about: This template provides a basic structure for user story issues.
+title: As a ..., I want to ..., so I can ...
 labels: User Story
+assignees: ''
+
 ---
 
 # User story

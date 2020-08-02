@@ -1,6 +1,10 @@
 ---
 name: Issue
 about: This template provides a basic structure for an issue.
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 ## Expected Behavior
