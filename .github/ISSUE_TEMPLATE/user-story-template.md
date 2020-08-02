@@ -1,7 +1,7 @@
 ---
 name: User story
 about: This template provides a basic structure for user story issues.
-title: As a ..., I want to ..., so I can ...
+title: As a ..., I want to ...
 labels: User Story
 assignees: ''
 
@@ -14,7 +14,8 @@ As a ..., I want to ..., so I can ...
 
 # Acceptance criteria
 
-- [ ] This is something that can be verified to show that this user story is satisfied.
+- [ ] Merge in the development branch (CI must be green)
+- [ ] Manual testing on the dev server
 
 # Sprint Ready Checklist
 1. - [ ] Acceptance criteria defined
