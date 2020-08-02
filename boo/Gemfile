@@ -1,20 +1,19 @@
 source 'https://rubygems.org'
 ruby '2.6.4'
 # APP AND DB
+gem "koala"
 gem 'bootsnap', require: false
+gem 'devise'
+gem 'haml'
+gem 'omniauth-facebook'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma'
 gem 'rails', '6.0.2.1'
+gem 'rails-i18n'
 gem 'redis'
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
-# APP
-gem 'devise'
-gem 'omniauth-facebook'
-gem "koala"
-gem 'rails-i18n'
 gem 'simple_form'
-# FRONTEND
 gem 'webpacker'
 
 group :development do

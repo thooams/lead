@@ -10,6 +10,7 @@ import 'components/header/header'
 import 'components/campaign/campaign'
 import 'components/wrapper/wrapper'
 import 'components/avatar/avatar'
+import 'bootstrap'
 // END OF IMPORTS (DO NOT DELETE)
 
 Rails.start()
