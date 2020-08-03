@@ -283,7 +283,13 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-  config.omniauth :facebook, Rails.application.credentials[Rails.env.to_sym][:facebook_app_id], Rails.application.credentials[Rails.env.to_sym][:facebook_app_secret], scope: "email, user_posts, pages_manage_ads, pages_manage_metadata, pages_read_engagement, pages_read_user_content, instagram_basic, instagram_manage_insights", info_fields: "email, first_name, last_name, name", image_size: 'large', secure_image_url: true
+  config.omniauth :facebook,
+    Rails.application.credentials.dig(Rails.env.to_sym, :facebook_app_id),
+    Rails.application.credentials.dig(Rails.env.to_sym, :facebook_app_secret),
+    scope: "email, user_posts, pages_manage_ads, pages_manage_metadata, pages_read_engagement, pages_read_user_content, instagram_basic, instagram_manage_insights",
+    info_fields: "email, first_name, last_name, name",
+    image_size: 'large',
+    secure_image_url: true
 
   # ==> Turbolinks configuration
   # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:

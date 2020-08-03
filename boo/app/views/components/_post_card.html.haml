@@ -1,0 +1,12 @@
+.card<>
+  = image_tag component.image_url, class: 'card-img-top'
+  .card-body<
+    .info<
+      = GlyphComponent.new(name: 'heart').render
+      = component.likes_count
+    .info<>
+      = GlyphComponent.new(name: 'comments').render
+      = component.comments_count
+    .info<
+      = GlyphComponent.new(name: 'lightning').render
+      = component.trend_percent
