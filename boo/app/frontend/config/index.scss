@@ -7,6 +7,17 @@ $screen-sm: 768px;
 $screen-md: 1200px;
 $screen-lg: 1400px;
 $screen-xl: 1600px;
+$primary: #ee7456 !default;
+
+// Begin Monkey patch because impossible to load boostrap variables
+a:hover{
+  color: $primary !important;
+}
+
+.text-primary{
+  color: $primary !important;
+}
+// End Monkey patch
 
 * {
   box-sizing: border-box;
@@ -20,14 +31,21 @@ body {
   font-size: 1.6rem;
   font-family: $baseFont;
   color: $fontColor;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, h4 {
   font-family: $headerFont;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.nav-link.active{
+  border-bottom: 3px solid $primary
 }
 

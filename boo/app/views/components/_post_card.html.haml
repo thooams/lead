@@ -1,6 +1,6 @@
 .card<>
   = image_tag component.image_url, class: 'card-img-top'
-  .card-body<
+  .card-body.d-flex.justify-content-between.justify-content-around<
     .info<
       = GlyphComponent.new(name: 'heart').render
       = component.likes_count
@@ -8,5 +8,5 @@
       = GlyphComponent.new(name: 'comments').render
       = component.comments_count
     .info<
-      = GlyphComponent.new(name: 'lightning').render
-      = component.trend_percent
+      = GlyphComponent.new(name: 'bolt').render
+      #{ component.trend_percent }%
