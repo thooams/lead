@@ -31,4 +31,10 @@ class PagesController < ApplicationController
     p @fetched_media
   end
 
+  def profile
+    # Monkey Patch
+    # TODO: Remove "Identity.first" When omniauth will work
+    @identity_presenter = IdentityPresenter.new(current_consumer&.identity || Identity.first)
+    render "identities/show"
+  end
 end

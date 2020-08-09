@@ -1,0 +1,28 @@
+.row
+  .col-2.profile-img
+    = image_tag(@identity_presenter.image, class: 'rounded-circle', onerror: "this.onerror=null;this.src='#{ asset_pack_path('media/static/user-default.png') }';")
+  .col-10.profile-info
+    .info
+      = link_to @identity_presenter.name, @identity_presenter.url
+      %br
+      %span
+        = ui_glyph name: 'instagram', type: :fab
+        // Can be extracted to a decorator if we need this unit elsewhere
+        = number_to_human(@identity_presenter.number_of_followers, :format => '%n%u', :precision => 2, :units => { :thousand => 'K', :million => 'M', :billion => 'B' })
+      %span
+        = ui_glyph name: 'bolt'
+        #{ @identity_presenter.trend_percent }%
+
+%nav.nav
+  = link_to t('influencer_information'), '#', class: 'nav-link active'
+
+%h2= t('last_instagram_posts')
+.card-deck
+  - @identity_presenter.posts.each do |post|
+    = ui_post_card image_url: post.image, likes_count: post.likes_count, comments_count: post.comments_count, trend_percent: post.trend_percent
+
+%h2= t('instagram_statistics')
+
+%h3= t('posts_habits')
+#cal-heatmap{ data: { values: @identity_presenter.heatmap_values.to_json }}
+

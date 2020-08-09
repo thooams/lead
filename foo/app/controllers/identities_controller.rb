@@ -1,5 +1,5 @@
 class IdentitiesController < ApplicationController
-  skip_before_action :authenticate_influencer!, :only => :show
+  skip_before_action :authenticate_consumer!, :only => :show
   #skip_authorize_resource :only => :show
 
   def show

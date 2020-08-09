@@ -3,5 +3,10 @@ Rails.application.routes.draw do
   resources :campaigns, only: [:index]
   devise_for :influencers, controllers: { omniauth_callbacks: 'influencers/omniauth_callbacks' }, skip: [:registrations]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :identities, only: [:show]
+  resources :identities, only: [:show], param: :user_name
+  resources :pages do
+    collection do
+      get :profile
+    end
+  end
 end

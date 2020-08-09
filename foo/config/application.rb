@@ -38,5 +38,6 @@ module Foo
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.autoload_paths += Dir[File.join(Rails.root, "lib", "foo", "*.rb")].each {|l| require l }
   end
 end

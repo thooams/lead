@@ -1,4 +1,4 @@
 require 'boo/boo_extension'
 
-module Lcas
+module Boo
 end
